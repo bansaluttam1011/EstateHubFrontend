@@ -50,10 +50,10 @@ const ContactUs = () => {
       icon: Phone,
       title: 'Phone Numbers',
       details: [
-        'Sales: +91-9876543210',
-        'Support: +91-8765432109',
-        'WhatsApp: +91-7654321098',
-        'Toll Free: 1800-123-4567'
+        'Sales: +91-6239099137',
+        'Support: +91-7719553827',
+        'WhatsApp: +91-6239099137',
+        
       ]
     },
     {
