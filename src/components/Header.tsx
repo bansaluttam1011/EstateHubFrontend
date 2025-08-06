@@ -17,22 +17,35 @@ const Header = () => {
     <>
       {/* Top Contact Bar */}
       <div className="bg-blue-600 text-white py-2 px-4 text-sm">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center">
-          <div className="flex items-center space-x-6">
-            <div className="flex items-center space-x-2">
-              <Phone className="h-4 w-4" />
-              <span>+91-6239099137, +91-7719553827</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Mail className="h-4 w-4" />
-              <span>bansaluttam36@gmail.com</span>
-            </div>
-          </div>
-          <div className="text-xs mt-1 sm:mt-0">
-            <span>RERA Registration: MH-REA-2024-001234, License: EST-LIC-2024-5678</span>
-          </div>
-        </div>
+  <div className="max-w-7xl mx-auto flex flex-col gap-2 sm:flex-row sm:justify-between sm:items-center">
+    
+    {/* Contact Info */}
+    <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-1 sm:space-y-0">
+      <div className="flex items-center space-x-2">
+        <Phone className="h-4 w-4" />
+        <span>+91-6239099137</span>
       </div>
+      <div className="flex items-center space-x-2">
+        <Phone className="h-4 w-4 invisible" /> {/* placeholder for alignment */}
+        <span>+91-7719553827</span>
+      </div>
+      <div className="flex items-center space-x-2">
+        <Mail className="h-4 w-4" />
+        <span>bansaluttam36@gmail.com</span>
+      </div>
+    </div>
+
+    {/* RERA Info */}
+    <div className="text-xs">
+      <span>
+        RERA Registration: MH-REA-2024-001234,<br className="sm:hidden" />
+        License: EST-LIC-2024-5678
+      </span>
+    </div>
+
+  </div>
+</div>
+
 
       <header className="bg-white shadow-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
