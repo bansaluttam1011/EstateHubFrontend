@@ -20,36 +20,37 @@ const Header = () => {
 
     {/* Contact Info */}
     <div className="flex items-center space-x-4">
+
       {/* Phone */}
       <div className="flex items-center space-x-1">
         <Phone className="h-4 w-4" />
-        <a href="tel:+916239099137" className="hidden sm:inline hover:underline">
-          +91-6239099137
-        </a>
-        <span className="hidden sm:inline">,</span>
-        <a href="tel:+917719553827" className="hidden sm:inline hover:underline">
-          +91-7719553827
+        <a href="tel:+916239099137" className="hover:underline">
+          <span className="sm:hidden">Call</span>
+          <span className="hidden sm:inline">+91-6239099137</span>
         </a>
       </div>
 
       {/* Email */}
       <div className="flex items-center space-x-1">
         <Mail className="h-4 w-4" />
-        <a href="mailto:bansaluttam36@gmail.com" className="hidden sm:inline hover:underline">
-          bansaluttam36@gmail.com
+        <a href="mailto:bansaluttam36@gmail.com" className="hover:underline">
+          <span className="sm:hidden">Email</span>
+          <span className="hidden sm:inline">bansaluttam36@gmail.com</span>
         </a>
       </div>
+
     </div>
 
-    {/* RERA Info */}
-    <div className="text-xs mt-1 sm:mt-0 text-center sm:text-left">
-      <span className="hidden sm:inline">
+    {/* RERA Info (Hidden on mobile) */}
+    <div className="text-xs mt-1 sm:mt-0 hidden sm:block text-center sm:text-left">
+      <span>
         RERA Registration: MH-REA-2024-001234, License: EST-LIC-2024-5678
       </span>
     </div>
 
   </div>
 </div>
+
 
 
 
