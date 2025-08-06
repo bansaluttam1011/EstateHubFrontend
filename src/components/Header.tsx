@@ -15,22 +15,29 @@ const Header = () => {
 
   return (
     <>
-      {/* Top Contact Bar */}
-     <div className="bg-blue-600 text-white py-2 px-4 text-sm">
+      <div className="bg-blue-600 text-white py-2 px-4 text-sm">
   <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center">
 
     {/* Contact Info */}
     <div className="flex items-center space-x-4">
-      {/* Phone Icon - Visible always */}
+      {/* Phone */}
       <div className="flex items-center space-x-1">
         <Phone className="h-4 w-4" />
-        <span className="hidden sm:inline">+91-6239099137, +91-7719553827</span>
+        <a href="tel:+916239099137" className="hidden sm:inline hover:underline">
+          +91-6239099137
+        </a>
+        <span className="hidden sm:inline">,</span>
+        <a href="tel:+917719553827" className="hidden sm:inline hover:underline">
+          +91-7719553827
+        </a>
       </div>
 
-      {/* Email Icon - Visible always */}
+      {/* Email */}
       <div className="flex items-center space-x-1">
         <Mail className="h-4 w-4" />
-        <span className="hidden sm:inline">bansaluttam36@gmail.com</span>
+        <a href="mailto:bansaluttam36@gmail.com" className="hidden sm:inline hover:underline">
+          bansaluttam36@gmail.com
+        </a>
       </div>
     </div>
 
